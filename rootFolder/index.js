@@ -12,7 +12,7 @@ const methodOverride = require('method-override')
 
 app.use(bodyParser.json())
 app.use(methodOverride('_method'))
-const mongoUri = 'mongodb+srv://indurevaibhav9:Vaibhav*18@cluster0.rcblgzz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const mongoUri = 'mongodb://127.0.0.1:27017/mydb2'
 
 const conn = mongoose.createConnection(mongoUri)
 let gfs;
